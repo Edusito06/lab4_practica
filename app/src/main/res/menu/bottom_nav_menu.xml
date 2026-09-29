@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Los ids deben ser iguales a los ids de los destinos del nav_graph -->
+    <item
+        android:id="@+id/categoriesFragment"
+        android:icon="@drawable/ic_category"
+        android:title="@string/menu_categories" />
+    <item
+        android:id="@+id/mealsFragment"
+        android:icon="@drawable/ic_restaurant"
+        android:title="@string/menu_meals" />
+    <item
+        android:id="@+id/recipeFragment"
+        android:icon="@drawable/ic_menu_book"
+        android:title="@string/menu_recipe" />
+</menu>

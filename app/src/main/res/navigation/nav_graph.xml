@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/categoriesFragment">
+
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="com.example.lab4.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/fragment_categories">
+        <!-- Clic en una categoría: se envía el nombre a Meals -->
+        <action
+            android:id="@+id/action_categoriesFragment_to_mealsFragment"
+            app:destination="@id/mealsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/mealsFragment"
+        android:name="com.example.lab4.MealsFragment"
+        android:label="@string/menu_meals"
+        tools:layout="@layout/fragment_meals">
+        <!-- Sin categoría (null) => modo búsqueda por ingrediente -->
+        <argument
+            android:name="category"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+        <!-- Clic en un plato (o plato sorpresa): se envía el id a Recipe -->
+        <action
+            android:id="@+id/action_mealsFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.example.lab4.RecipeFragment"
+        android:label="@string/menu_recipe"
+        tools:layout="@layout/fragment_recipe">
+        <!-- Sin id (null) => el usuario lo escribe -->
+        <argument
+            android:name="mealId"
+            android:defaultValue="@null"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Sabores del Mundo</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <!-- TODO: reemplazar por tu nombre y código -->
+    <string name="elaborado_por">Elaborado por: Nombre Apellido / 20200000</string>
+
+    <string name="dialog_sin_internet_titulo">Sin conexión a Internet</string>
+    <string name="dialog_sin_internet_mensaje">Para usar la aplicación necesitas conexión a Internet. Revisa tus ajustes de red.</string>
+    <string name="dialog_configuracion">Configuración</string>
+    <string name="dialog_cancelar">Cancelar</string>
+
+    <string name="menu_categories">Categories</string>
+    <string name="menu_meals">Meals</string>
+    <string name="menu_recipe">Recipe</string>
+
+    <string name="hint_ingrediente">Ingrediente (ej. chicken_breast)</string>
+    <string name="hint_id_plato">ID del plato (ej. 52959)</string>
+    <string name="btn_buscar">Buscar</string>
+    <string name="lbl_meals_categoria">Platos de la categoría: %1$s</string>
+    <string name="lbl_id_plato">ID: %1$s</string>
+    <string name="lbl_categoria">Categoría: %1$s</string>
+    <string name="lbl_area">Origen: %1$s</string>
+    <string name="lbl_instrucciones">Instrucciones</string>
+    <string name="lbl_ingredientes">Ingredientes</string>
+
+    <string name="error_ingrediente_vacio">Escribe un ingrediente</string>
+    <string name="error_id_vacio">Escribe el ID de un plato</string>
+    <string name="error_red">No se pudo obtener la información. Revisa tu conexión.</string>
+    <string name="error_sin_resultados">No se encontraron resultados</string>
+    <string name="error_sin_acelerometro">Este dispositivo no tiene acelerómetro</string>
+
+    <string name="dialog_sorpresa_titulo">¡Plato sorpresa!</string>
+    <string name="dialog_sorpresa_mensaje">%1$s\n%2$s · %3$s</string>
+    <string name="dialog_ver_receta">Ver receta</string>
+    <string name="dialog_cerrar">Cerrar</string>
+    <string name="cd_imagen">Imagen</string>
+</resources>
